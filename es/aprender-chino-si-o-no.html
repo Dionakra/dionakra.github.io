@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>David de los Santos Boix | Blog</title>
+  <meta charset="utf-8">
+  <meta data-hid="description" name="description" content="David de los Santos Boix | Blog">
+  <meta name="apple-mobile-web-app-title" content="David de los Santos Boix | Blog">
+  <meta property="og:title" content="David de los Santos Boix | Blog" vmid="og:title">
+  <meta property="og:site_name" content="David de los Santos Boix | Blog" vmid="og:site_name">
+  <meta property="og:locale" content="es_ES" vmid="og:locale">
+  <meta property="og:description" content="David de los Santos Boix | Blog" vmid="og:description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link defer async rel="stylesheet" href="https://writ.cmcenroe.me/1.0.4/writ.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Boix's Blog</h1>
+    <p>
+      <a target="_blank" href="https://github.com/Dionakra">
+        <svg width="60" height="40">
+          <image xlink:href="/img/github.svg" width="40" height="40" />
+        </svg>
+      </a>
+
+      <a target="_blank" href="https://www.linkedin.com/in/david-de-los-santos-boix/">
+        <svg width="60" height="40">
+          <image xlink:href="/img/linkedin.svg" width="40" height="40" />
+        </svg>
+      </a>
+
+      <a target="_blank" href="https://twitter.com/Dionakra">
+        <svg width="40" height="40">
+          <image xlink:href="/img/twitter.svg" width="40" height="40" />
+        </svg>
+      </a>
+    </p>
+    <nav>
+      <ul>
+        <li><a href="/es">Índice</a></li>
+        <li><a href="/">EN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Por qué y cómo</h2>
+    <em>7, November, 2020</em>
+    <ul>
+      <li><a href="#por-que">¿Por qué un blog propio y no Medium?</a></li>
+      <li><a href="#que-quiero">¿Qué quiero en el blog?</a>
+        <ol>
+          <li>Propiedad</li>
+          <li>Disponibilidad</li>
+          <li>Accessibilidad</li>
+          <li>Facilidad de mantenimiento</li>
+          <li>Bilingüismo</li>
+        </ol>
+      </li>
+      <li><a href="#que-no-quiero">¿Qué <u>no</u> quiero en el blog?</a>
+        <ol>
+          <li>Cookies</li>
+          <li>JavaScript</li>
+          <li>Dependencias</li>
+          <li>Analíticas</li>
+        </ol>
+      </li>
+      <li><a href="#dificultad">¿Por qué es tan difícil crear un blog?</a></li>
+      <li><a href="#como">Cómo se ha creado el blog</a></li>
+    </ul>
+
+    <h3 id="por-que">¿Por qué un blog propio y no Medium?</h3>
+    <p>
+      Hace unos años me encontré con la comunidad de <a href="https://dev.to/" target="_blank">dev.to</a>, una comunidad
+      alrededor del mundo del software donde se mezclan experiencias personales, consejos, entradas puramente técnicas,
+      concursos o curiosidades.
+      Poco después me encontré con <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a>, un agregador
+      de noticias, en general sobre software, que me ha mantenido un año visitándola diariamente y donde he encontrado
+      mucha información interesante y útil, mucha de ella en blogs personales de diferentes desarrolladores, arquitectos
+      y miembros de diferentes comunidades en general.
+    </p>
+    <p>
+      Un tiempo después me animé a escribir una entrada acerca de las métricas en Neo4J, cómo gestionarlas y cómo los
+      valores de configuración por defecto podían causar problemas de espacio en disco. Tras escribirlo, <a
+        href="https://medium.com/@Dionakra/neo4j-metrics-and-disk-space-provisioning-e54aec0df18a"
+        target="_blank">publiqué el artículo en Medium</a>, donde estaría disponible para todo el mundo que tuviera ese
+      problema, dado que había encontrado alguna mención a este problema en el foro de Neo4J. Tras un par de días,
+      encontré ciertas cosas en Medium con las que no estaba del todo cómodo:
+
+    <h4>Artículos limitados</h4>
+    <p>Medium te permite leer hasta dos artículos al mes de forma gratuita, por
+      lo que, realmente, el artículo no estaba realmente disponible para todo el mundo, a no ser que cada individuo
+      sepa sortear la barrera de pago que impone.</p>
+
+    <h4>Idioma</h4>
+    <p>Si bien Medium permite la publicación de contenido en cualquier idioma, la plataforma
+      es principalmente angloparlante, por lo que si quieres que tu contenido sea relevante, debes adaptarte al
+      idioma. Es cierto que el mundo del software se comunica mayoritariamente en inglés, siendo éste el idioma
+      dominante y, si no sabes algo de inglés, lo vas a pasar regular leyendo documentación, aprendiendo o buscando
+      soluciones a problemas que te encuentres, por lo que el inglés es casi un requisito más para cualquier persona que
+      esté relacionada con el software, pero quizá no debería ser el único, dado que hay una comunidad enorme de
+      desarrolladores de software en Internet creando soluciones tan buenas o mejores que las que se publican en inglés.
+      <strong>China</strong>.</p>
+
+    <p>
+      Hace unos años me encontré con <a href="https://echarts.apache.org/en/index.html" target="_blank">Baidu
+        ECharts</a>, que poco después pasaría a ser
+      <em>Apache ECharts</em> (en incubación), una librería JavaScript para desarrollo de gráficas muy interesante. La
+      mayoría de la documentación por entonces estaba en chino, aunque había un intento de traducción al inglés, pero no
+      era tan completa como el idioma original de la librería, pero era suficiente. Años más tarde me encontré con <a
+        href="https://g2.antv.vision/en" target="_blank">AntV G2</a>, otra librería de visualización como
+      <em>ECharts</em>, pero, a mi parecer, mucho
+      más bonita. Tras investigar un poco sobre los creadores de ésta librería, me encontré que han creado todo un
+      ecosistema de herramientas de visualización, como <a href="https://f2.antv.vision/en" target="_blank">AntV F2</a>
+      para móviles o <a href="https://g6.antv.vision/en" target="_blank">AntV G6</a> para grafos.
+    </p>
+
+    <p>Resulta que AntV es producto de <em>Ant Financial</em>, que son parte de <a href="https://www.antgroup.com/en"
+        target="_blank">Ant Group</a>, más conocidos como <strong>Alipay</strong>, del gigante <strong>Alibaba</strong>.
+      Éste descubrimiento me llevó a pensar que casi todo el software que consumimos en occidente es creado también en
+      occidente, con una base de usuarios enorme, pero hay otra base de usuarios enorme situada en China que, por
+      razones geopolíticas, crean su propio software para todo, incluye su propio Google, (Baidu), su propio Amazon
+      (Alibaba), su propio WhatsApp (WeChat) e infinidad de productos y servicios que replican o coexisten en el mundo
+      intentando resolver los mismos problemas, por lo que seguramente, a problemas iguales, tendremos dos soluciones a
+      escala global diferentes. Puede que tengan ciertas similitudes las diferentes soluciones a esos problemas, pero
+      seguramente existan diferencias en las implementaciones, descubrimientos y experimentaciones.
+    </p>
+
+    <p>
+      La existencia de un mundo oriental de desarrollo de software que no llega a occidente de forma masiva, pero que se
+      desarrolla de la misma forma me hace pensar que, por el hecho de no saber chino mandarín, nos estamos perdiendo
+      piezas de software tan increíbles o mejores como las que utilizamos diariamente en occidente, por lo que,
+      <mark>¿Debemos aprender chino al igual que inglés para el mundo del software?</mark>. Mi respuesta personal es que
+      sí, dado que habrá mucho software que no nos llegue por esa falta de documentación y, mientras la población china
+      puede tener cierto dominio del inglés, la población occidental es una gran desconocedora del idioma chino
+    </p>
+
+    <li><strong>Analíticas</strong>: </li>
+    </ul>
+    </p>
+
+
+
+    <h3 id="que-quiero">¿Qué quiero en el blog</h3>
+    <h3 id="que-no-quiero">¿Qué <u>no</u> quiero en el blog?</h3>
+    <h3 id="dificultad">¿Por qué es tan difícil crear un blog?</h3>
+    <h3 id="como">Cómo se ha creado el blog</h3>
+
+    <h3>Last Last post title</h3>
+
+    <p>
+      Quick Summary
+    </p>
+
+    <h2>Lists</h2>
+
+    <ul>
+      <li>List Item 1</li>
+      <li>
+        List Item 2
+        <ul>
+          <li>Sublist Item 1</li>
+          <li>
+            Sublist Item 2
+            <ul>
+              <li>Subsublist Item 1</li>
+              <li>Subsublist Item 2</li>
+              <li>Subsublist Item 3</li>
+            </ul>
+          </li>
+          <li>Sublist Item 3</li>
+        </ul>
+      </li>
+      <li>List Item 3</li>
+    </ul>
+
+    <ol>
+      <li>List Item 1</li>
+      <li>
+        List Item 2
+        <ol>
+          <li>Sublist Item 1</li>
+          <li>
+            Sublist Item 2
+            <ol>
+              <li>Subsublist Item 1</li>
+              <li>Subsublist Item 2</li>
+              <li>Subsublist Item 3</li>
+            </ol>
+          </li>
+          <li>Sublist Item 3</li>
+        </ol>
+      </li>
+      <li>List Item 3</li>
+    </ol>
+
+    <ul>
+      <li>
+        Mixed Item
+        <ol>
+          <li>
+            Mixed Item
+            <ul>
+              <li>Mixed Item</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+
+    <dl>
+      <dt>Term 1</dt>
+      <dd>Definition 1</dd>
+      <dt>Term 2</dt>
+      <dd>Definition 2</dd>
+      <dt>Term 3</dt>
+      <dd>Definition 3</dd>
+    </dl>
+
+    <h2>Table</h2>
+
+    <table>
+      <caption>My Little Table</caption>
+
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+          <td>Cell 3</td>
+        </tr>
+        <tr>
+          <td>Cell 4</td>
+          <td>Cell 5</td>
+          <td>Cell 6</td>
+        </tr>
+        <tr>
+          <td>Cell 7</td>
+          <td>Cell 8</td>
+          <td>Cell 9</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Footer 1</td>
+          <td>Footer 2</td>
+          <td>Footer 3</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Blockquote</h2>
+
+    <blockquote>
+      Mauris ultrices sagittis pulvinar. Nullam ultrices neque et tristique
+      pharetra. Cras sodales tellus ac eros euismod, eu tincidunt elit varius.
+      Proin nec faucibus magna. Phasellus rhoncus ligula nec diam posuere semper
+      vitae eget nunc. Donec elementum ultricies dolor, vel mollis nulla dapibus
+      ac. Sed pellentesque commodo condimentum. Integer vel urna sem.
+    </blockquote>
+
+    <h2>Pre-formatted</h2>
+
+    <pre>&lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;link rel="stylesheet" href="writ.min.css"&gt;</pre>
+
+    <h2>Inline</h2>
+
+    <p>
+      An <a href="//bye">unvisited link</a> and a
+      <a href="reference.html">visited link</a>.
+    </p>
+
+    <p>
+      Some <em>emphasized text</em>, <strong>strong text</strong>,
+      <u>underlined text</u>, <mark>highlighted text</mark> and
+      <small>small text</small>.
+    </p>
+
+    <p>
+      <del>This text was deleted.</del> <ins>This text was inserted.</ins>
+    </p>
+
+    <p>
+      January 1<sup>st</sup>, 1970. H<sub>2</sub>O.
+    </p>
+
+    <p>
+      The maths kind of variable, <var>x</var>.
+    </p>
+
+    <p>
+      Inline code, <code>printf("Hello, world!");</code>,
+      and sample output, <samp>Hello, world!</samp>.
+    </p>
+
+    <p>To exit Emacs, press <kbd>C-x C-c</kbd>.</p>
+
+    <h2>Figure &amp; Aside</h2>
+
+    <figure>
+      <img alt="Kitten" src="https://placekitten.com/g/200/280">
+      <figcaption>A cute little kitten</figcaption>
+    </figure>
+
+    <p>
+      Fusce consectetur augue lacus, ac dapibus neque maximus a. Maecenas
+      sollicitudin metus sodales, venenatis sapien at, fringilla enim.
+      Suspendisse dapibus pulvinar nunc, in pretium neque condimentum eu. Donec
+      nec sollicitudin justo, lobortis fermentum magna. Maecenas tempus lacinia
+      augue at posuere. Vestibulum auctor, dui in blandit malesuada, dui felis
+      consequat orci, eu auctor nunc leo eget ex. Suspendisse consequat auctor
+      risus in venenatis. Duis vel sapien eu enim facilisis auctor. Mauris ac
+      feugiat mauris, eu tristique sapien. Aenean mattis in magna sed ultricies.
+      Suspendisse convallis risus lectus, eget molestie mauris aliquam quis.
+      Integer eget cursus nulla. Cras sodales viverra metus in laoreet. Mauris
+      accumsan gravida quam sed interdum.
+    </p>
+
+    <p>
+      Fusce consectetur augue lacus, ac dapibus neque maximus a. Maecenas
+      sollicitudin metus sodales, venenatis sapien at, fringilla enim.
+      Suspendisse dapibus pulvinar nunc, in pretium neque condimentum eu. Donec
+      nec sollicitudin justo, lobortis fermentum magna. Maecenas tempus lacinia
+      augue at posuere. Vestibulum auctor, dui in blandit malesuada, dui felis
+      consequat orci, eu auctor nunc leo eget ex. Suspendisse consequat auctor
+      risus in venenatis. Duis vel sapien eu enim facilisis auctor. Mauris ac
+      feugiat mauris, eu tristique sapien. Aenean mattis in magna sed ultricies.
+      Suspendisse convallis risus lectus, eget molestie mauris aliquam quis.
+      Integer eget cursus nulla. Cras sodales viverra metus in laoreet. Mauris
+      accumsan gravida quam sed interdum.
+    </p>
+
+    <aside>
+      The quick brown fox jumps over the lazy dog.
+    </aside>
+
+    <p>
+      Pellentesque purus quam, facilisis quis mi non, porttitor malesuada mi. Sed
+      a hendrerit neque. Sed malesuada ex lorem, eget sagittis est semper sed.
+      Praesent convallis est in auctor lacinia. Praesent eu tortor sed massa
+      venenatis volutpat nec id erat. Mauris blandit mollis est a aliquet. Nam
+      convallis leo at blandit vehicula. Vestibulum a tellus in orci viverra
+      consectetur et suscipit justo. Integer finibus placerat ligula at cursus.
+      Morbi laoreet nibh euismod porttitor hendrerit. Suspendisse volutpat et
+      neque placerat molestie. Vivamus justo ligula, accumsan rhoncus tristique
+      vitae, efficitur a justo. Donec vel accumsan mi. Nam bibendum malesuada
+      efficitur.
+    </p>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>Built with
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="13px" height="13px">
+        <path
+          d="m12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+      </svg> using <a href="https://github.com/causal-agent/writ">Writ</a>.
+    </p>
+  </footer>
+
+</body>
+
+</html>
