@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-title" content="David de los Santos Boix | Blog | Why and how">
   <meta property="og:title" content="David de los Santos Boix | Blog | Why and how" vmid="og:title">
   <meta property="og:site_name" content="David de los Santos Boix | Blog | Why and how" vmid="og:site_name">
-  <meta property="og:locale" content="es_ES" vmid="og:locale">
+  <meta property="og:locale" content="en_EN" vmid="og:locale">
   <meta property="og:description" content="David de los Santos Boix | Blog | Why and how" vmid="og:description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link defer async rel="stylesheet" href="https://writ.cmcenroe.me/1.0.4/writ.min.css">
@@ -18,19 +18,20 @@
   <header>
     <h1>Boix's Blog</h1>
     <p>
-      <a target="_blank" href="https://github.com/Dionakra">
+      <a rel="noreferrer" target="_blank" href="https://github.com/Dionakra" aria-label="Link to my GitHub profile">
         <svg width="60" height="40">
           <image xlink:href="/img/github.svg" width="40" height="40" />
         </svg>
       </a>
 
-      <a target="_blank" href="https://www.linkedin.com/in/david-de-los-santos-boix/">
+      <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/david-de-los-santos-boix/"
+        aria-label="Link to my LinkedIn profile">
         <svg width="60" height="40">
           <image xlink:href="/img/linkedin.svg" width="40" height="40" />
         </svg>
       </a>
 
-      <a target="_blank" href="https://twitter.com/Dionakra">
+      <a rel="noreferrer" target="_blank" href="https://twitter.com/Dionakra" aria-label="Link to my Twitter profile">
         <svg width="40" height="40">
           <image xlink:href="/img/twitter.svg" width="40" height="40" />
         </svg>
@@ -38,7 +39,7 @@
     </p>
     <nav>
       <ul>
-        <li><a href="/en">Índice</a></li>
+        <li><a href="/">Index</a></li>
         <li><a href="/es/por-que-y-como.html">ES</a></li>
       </ul>
     </nav>
@@ -46,128 +47,222 @@
 
   <main>
     <h2>Why and how</h2>
-    <em>7, Noviembre, 2020</em>
+    <em>7, November, 2020</em> | <a rel="noreferrer" href="https://github.com/Dionakra/dionakra.github.io/issues/1"
+      target="_blank"><em>Go to comments</em></a>
     <ul>
-      <li><a href="#por-que">¿Por qué un blog?</a></li>
-      <li><a href="#por-que-no-medium">¿Por qué no Medium?</a></li>
-      <li><a href="#que-quiero">¿Qué quiero en el blog?</a></li>
-      <li><a href="#que-no-quiero">¿Qué <u>no</u> quiero en el blog?</a></li>
-      <li><a href="#dificultad">¿Por qué es tan difícil crear un blog?</a></li>
-      <li><a href="#como">Cómo se ha creado el blog</a></li>
+      <li><a href="#why">Why a blog?</a></li>
+      <li><a href="#why-not-medium">Why not Medium?</a></li>
+      <li><a href="#what-i-want">What do I want in the blog?</a></li>
+      <li><a href="#what-i-dont-want">What do I <u>don't</u> want in the blog?</a></li>
+      <li><a href="#how">How has the blog been created?</a></li>
     </ul>
 
     <!---------------------------------------------------------------------------------------------------------------->
-    <h3 id="por-que">¿Por qué un blog?</h3>
-    <p>
-      Hace unos años me encontré con la comunidad de <a href="https://dev.to/" target="_blank">dev.to</a>, una comunidad
-      alrededor del mundo del software donde se mezclan experiencias personales, consejos, entradas puramente técnicas,
-      concursos o curiosidades.
-      Poco después me encontré con <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a>, un agregador
-      de noticias, en general sobre software, que me ha mantenido un año visitándola diariamente y donde he encontrado
-      mucha información interesante y útil, mucha de ella en blogs personales de diferentes desarrolladores, arquitectos
-      y miembros de diferentes comunidades en general.
-    </p>
-    <p>
-      Un tiempo después me animé a escribir una entrada acerca de las métricas en Neo4J, cómo gestionarlas y cómo los
-      valores de configuración por defecto podían causar problemas de espacio en disco. Tras escribirlo, <a
-        href="https://medium.com/@Dionakra/neo4j-metrics-and-disk-space-provisioning-e54aec0df18a"
-        target="_blank">publiqué el artículo en Medium</a>, donde estaría disponible para todo el mundo que tuviera ese
-      problema, dado que había encontrado alguna mención a este problema en el foro de Neo4J. Unos días después, me di
-      cuenta que Medium no era para mí.
+    <h3 id="why">Why a blog?</h3>
+    <span>
+      <span>Several years ago I stumbled upon <a rel="noreferrer" href="https://dev.to/" target="_blank">dev.to</a>, a
+        software developers community where you can find experiences, technical writings or some funny caveats. A little
+        bit later I found <a rel="noreferrer" href="https://news.ycombinator.com/" target="_blank">Hacker
+          News</a>, a news aggregator, software-related most of the time that has been taking most of my online surfing
+        for the last year, where I have found lots of useful and interesting people and articles.</span>
+      <p>
+        Sometime later after reading many blog posts at Hacker News, I leapt and wrote a blog post myself
+        regarding how the default configuration in Neo4J could cause disk space problems. After writing it,
+        <a rel="noreferrer" href="https://medium.com/@Dionakra/neo4j-metrics-and-disk-space-provisioning-e54aec0df18a"
+          target="_blank">I published it on Medium</a>, where it would be available for everyone in the world that might
+        encounter this problem, as I found several mentions to that problematic in Neo4J's forums. Several days later, I
+        found that Medium wasn't made for me.
+      </p>
 
       <!---------------------------------------------------------------------------------------------------------------->
-    <h3 id="por-que-no-medium">¿Por qué no Medium?</h3>
-    Tras un par de días, encontré ciertas cosas en Medium con las que no estaba del todo cómodo tanto desde la
-    perspectiva de usuario como la de escritor:
-    <ul>
-      <li><strong>Limitación de dos artículos gratuitos al mes</strong>: Quiero hacer extensivo un conocimiento
-        concreto a cualquier persona que pueda tener el mismo tipo de problema. ¿Realmente quiero ponerlo en una
-        plataforma que te limita la lectura y te hace pagar por esa información?</li>
-      <li><strong>Disponibilidad del contenido</strong>: Medium no ejerce un derecho exclusivo sobre el contenido
-        que publiques en su plataforma, es decir, lo que escribes permanece de tu propiedad y puedes copiar y pegar
-        dicho contenido donde quieras, por lo que no te encierra en su plataforma, pero tenerlo únicamente ahí hace que,
-        si
-        sus reglas cambian o desaparece de un día para otro, tu contenido lo hará con la plataforma. ¿Realmente quiero
-        eso?
-      </li>
-      <li><strong>Recordatorio constante de monetización de contenido</strong>: En los primeros días Medium me envió
-        varios correos recordándome que puedo activar la monetización del artículo, donde me pagarían una cantidad por
-        número de visitas. La idea de ganar algo de dinero por escribir algún artículo no es del todo atractiva, dado
-        que puede convertir la necesidad o voluntad de escribir algo por el hecho de compartir algo en hacerlo por la
-        posibilidad de ganar dinero. No estoy cómodo mezclando esas dos partes.</li>
-      <li><strong>Números, números por todas partes</strong>: A Medium le interesa que el contenido que aportes se lea,
-        se comparta y llegue a cuanta más gente mejor, dado que eso reporta en última instancia nuevos usuarios y, en
-        definitiva, dinero. Para ello Medium te aporta métricas sobre visitas, tiempo medio de visita, veces que se ha
-        compartido, comentarios, aplausos (el homólogo del <em>like</em> en cualquier otra plataforma)</li>. Toda esta
-      gamificación y ansia de aumentar unos números me repelen en general, no quiero mirarlos y, si es posible, no
-      quiero tenerlos. Este tipo de métricas es muy útil para muchas cosas, pero no quiero escribir para intentar
-      aumentar un número. Quiero hacerlo porque quiero, y no tener ese número me facilita no caer en la tentación.
-    </ul>
+      <h3 id="why-not-medium">Why not Medium?</h3>
+      <span>After a couple of days, I found some things in Medium that I wasn't comfortable with, both as a writer and as
+        a user:</span>
+      <ul>
+        <li><strong>Only two free articles a month</strong>: I want to make public some knowledge to anyone that might
+          have the same problem. Do I want to put it in a platform that has a paywall?</li>
+        <li><strong>Content availability</strong>: Medium doesn't hold any exclusive rights on the content you publish
+          in their platform, so what you have the full ownership of whatever you write, so you are not platform-locked,
+          but having the article only in there makes you play with their rules, so if they change them or Medium
+          disappears, your content does with it. Do I want that?
+        </li>
+        <li><strong>Content monetization, monetize yourself!</strong> In the first days, Medium sent me several emails
+          remembering me that I could enable article monetisation, where they would pay some bucks, and that's great.
+          The possibility of writing some technical article and receiving some money for it is not bad at all. But maybe
+          that makes me focus on making money with whatever I write instead of focusing on just writing because I want.
+        </li>
+        <li><strong>Numbers, numbers everywhere</strong>: Medium is very interested in getting your content as popular
+          as it can, as it translates in new users, so new potential customers so, in the end, money. To help that grow,
+          Medium provides several metrics, like the visit count, average read time, number of shares, comments and
+          applauses (Medium's <em>like</em>). All this information, which is ok, I don't want to look at them and, if
+          possible, I don't want them. These kind of metrics are very useful for a wide range of use cases, but I don't
+          want to write to increase a number in a dashboard. I want to write because I like to, so not having those
+          numbers helps me.
+        </li>
+      </ul>
 
-    <p>Debido a estas razones encuentro que, si debo escribir artículos y publicarlos, debo hacerlo por mí mismo, donde
-      tenga control sobre su contenido, sea visible para todo el mundo sin restricciones y no me preocupe en absoluto
-      por
-      los números asociados a cada entrada.</p>
+      <p>Due to those reasons, I find that, if I want to write some articles and publish them, I should do it for myself,
+        wherever I have control over its content, allow it to be visible to anyone without any kind of restrictions and
+        not to worry at all about some kind of numbers attached to each post.</p>
 
-    <!---------------------------------------------------------------------------------------------------------------->
-    <h3 id="que-quiero">¿Qué quiero en el blog?</h3>
-    <p>Teniendo el control total sobre el blog la siguiente pregunta es, ¿Qué debo incluir para estar cómodo con mi
-      propio
-      blog? Para ello, el blog va a seguir unas premisas básicas que, si bien pueden aumentar la cantidad de trabajo
-      necesaria para publicar un artículo, hará que esté más cómodo con el resultado final:</p>
+      <!---------------------------------------------------------------------------------------------------------------->
+      <h3 id="what-i-want">What do I want in the blog?</h3>
+      <span>Once I have the full control over the blog, the following question is: What shall I include to the blog? In
+        my case, the blog is going to follow some basic rules:</span>
 
-    <h4>Propiedad</h4>
-    <p>El contenido del blog, en su totalidad, debe pertenecerme. Debo tener el control total de lo que se publica y no
-      se
-      publica y no debe depender de factores externos. Para ello, he decidido gestionar el blog en <a
-        href="https://github.com/Dionakra/dionakra.github.io" target="_blank">GitHub</a>. El contenido
-      del blog y sus cambios están controlados por git y la publicación en Internet se realiza mediante GitHub Pages y,
-      mientras cumpla con las políticas de GitHub, no habrá ningun problema y, en cualquier momento, puedo llevarme el
-      blog tal y como está y publicarlo en cualquier otro sitio.</p>
+      <h4>Ownership</h4>
+      <span>I should own the blog and its content. I should have full control over what is published and what is not,
+        with no dependencies whatsoever from external resources. Because of that, I will manage the blog through <a
+          rel="noreferrer" href="https://github.com/Dionakra/dionakra.github.io" target="_blank">GitHub</a>. The changes
+        performed within the block will be tracked by git, and the publishing of the blog will be made through GitHub
+        Pages. The format of the blog will be portable, so if I want to move over GitHub, I can migrate the blog to
+        wherever else.</span>
 
-    <h4>Accesibilidad</h4>
-    <p>
-      El blog debe ser accesible a cualquier persona que quiera leerlo. Para ello el blog debe cumplir los siguientes
-      requisitos:
-    <ul>
-      <li>Elección adecuada de los colores, evitando problemas a personas con daltonismo.</li>
-      <li>Estructuración clara del blog, facilitando la lectura asistida por ordenador a personas con diversidades
-        funcionales.</li>
-      <li>Cumplimiento de estándares de accesibilidad como <a href="https://developers.google.com/web/tools/lighthouse"
-          target="_blank">Lighthouse</a> o <a href="https://www.deque.com/axe/" target="_blank">Deque aXe</a>.</li>
-      <li>Minimización de utilización de recursos. La accesibilidad no se refiere únicamente a que la web, una vez
-        cargada, pueda ser consumida por cualquier persona, sino que también incluye el hecho de que cualquier persona,
-        independientemente de la conexión a internet que tenga, pueda cargar la web y consumirla.</li>
-      <li>Omisión de JavaScript, dado que existen usuarios que deshabilitan la ejecución de JavaScript en sus
-        navegadores, y éstas personas también deben poder leer el contenido de este blog. Además, ¿Qué JavaScript se
-        necesita para mostrar una entrada de un blog?</li>
-    </ul>
-    </p>
+      <h4>Accessibility</h4>
+      <span>The blog needs to be accessible to anyone that wants to read it. To achieve that, the blog needs to fulfil
+        the following requisites:
+        <ul>
+          <li>Right election of colours, avoiding problems to colourblind people.</li>
+          <li>Clean structure of the blog, so computer-assisted readers can easily read the blog to functional diverse
+            people.</li>
+          <li>Follow accessibility standards like <a rel="noreferrer"
+              href="https://developers.google.com/web/tools/lighthouse" target="_blank">Lighthouse</a> or <a
+              rel="noreferrer" href="https://www.deque.com/axe/" target="_blank">Deque aXe</a>.</li>
+          <li>Minimize resource usage. Accessibility does not only refer that the web, once loaded, should be easy to
+            read to anyone. It also includes the ability for anyone to load the web, whatever internet connection or
+            device the person has.</li>
+          <li>No JavaScript. Some users disable JavaScript on their browsers, and those people should also be able to
+            read this blog. However, do we need JavaScript on a blog? I think not.</li>
+        </ul>
+      </span>
 
-    <h4>Facilidad de mantenimiento</h4>
-    <p>
-      Quiero poder añadir una nueva entrada de blog en cualquier lugar y momento, sin demasiada complicación, sin
-      necesidad de instalar demasiadas herramientas y con un proceso de publicación sencillo.
-    </p>
+      <p>
+        Those requisites are not met in most of the web pages you visit daily except few exceptions, which
+        maybe they are met to maximize the number of customers, not because of empathy, but hey, they are making it easier
+        for everyone. <mark>It seems that we focus on working so the web can be displayed on every device,
+          but we don't focus on making the web to work for everyone</mark>.</p>
+
+      <h4>Ease of maintenance</h4>
+      <span>
+        I want to be able to add a blog entry wherever and whenever, without any hassle, without the need of installing
+        any tooling or overly complicated publishing processes.
+      </span>
+
+      <h4>Multilingualism</h4>
+      <span>
+        Every content on the blog will be available both in English and Spanish for several reasons:
+        <ol>
+          <li>Spanish is my mother tongue, so it is easier for me to articulate and communicate the ideas rather than
+            any other language. Therefore, by writing the blog post first in Spanish will help me to structure what I
+            want to say. Also, with this approach, I can make the content available to anyone that speaks Spanish but
+            does not understand very well the English language.</li>
+          <li><a rel="noreferrer"
+              href="https://www.psychologytoday.com/us/blog/life-bilingual/201111/change-language-change-personality"
+              target="_blank">Several research papers point out that our personality switches depending on which
+              language we are using</a>. This idea <a rel="noreferrer"
+              href="https://www.psychologytoday.com/us/blog/life-bilingual/202001/change-language-change-personality-uncovered-data"
+              target="_blank">is not widely accepted</a>, but in my case, I can notice a slight difference on how I
+            express myself in English and Spanish, mainly in the tone I use, so I find interesting to write every post
+            twice so each personality if there is any difference, will leak into each post and will imprint its
+            personality on each post.</li>
+          <li>English is undoubtedly the main language on software development in the occident, so publishing the content
+            in English is almost mandatory.</li>
+        </ol>
+      </span>
+
+      <!---------------------------------------------------------------------------------------------------------------->
+      <h3 id="what-i-dont-want">What do I <u>don't</u> want in the blog?</h3>
+      <span>There are several things that I'm sure I don't want to be present in this blog:</span>
+      <h4>Cookies</h4>
+      <span>Is there anyone out there that is not sick and tired of the cookie banner on every single web page? And,
+        more importantly, why does every single page need using cookies? The answer to the later is that
+        almost everyone uses some kind of analytics in their webpages, mostly Google Analytics, so they need to store
+        some cookies to send information to Google to collect information regarding web usage, how to improve SEO
+        strategies and all these kind of stuff.</span>
+
+      <p>In the blogs realm, it might be important to know how many visits does it have, the success of each post to know
+        what works and what doesn't. In my case, as stated before, I don't want that information, so I will follow the
+        path built by <a rel="noreferrer" href="https://es.wikipedia.org/wiki/Henry_Darger" target="_blank">Henry
+          Darger</a>. I will write and publish only because I want to. There is a foundational difference here, and it
+        is that Henry didn't show his work to anyone in the world, and I am doing just the opposite, but the philosophy
+        of doing something because I want and I don't care if it has some success or not is underneath.</p>
+
+      <h4>JavaScript</h4>
+      <span>In the modern web development era, almost any web, however small it is, is built using Angular, React, Vue,
+        Svelte, Polymer or whatever framework that is trending that day. Frameworks that usually aim to build highly
+        interactive and dynamic web pages. This is not the use case of a blog. Because of the need for generating static
+        websites, those frameworks also come with some tooling to help with that. Next.js for Rect, Nuxt.js for Vue or
+        Sapper for Svelte.</span>
+
+      <p>In any case, developing a static webpage forces you to learn the framework, work with the internationalisation
+        module (i18n), how is it build and deployed, component lifecycles and so on, just to generate some old plain
+        HTML files, and even with that, in most cases, they still need some JavaScript after the HTML files are
+        generated.
+      </p>
+
+      <p>But, is it necessary that amount of overengineering for the final result to be a simple HTML file with
+        some text and a couple of images? No, it is not, and the amount of work, effort and learning to get that static
+        HTML file is too high. And we are not speaking about the fact that those JavaScript files need to be parsed,
+        interpreted and executed by the browser, which in most cases, for a blog post, it is not even remotely
+        necessary.</p>
 
 
-    <h4>Bilingüismo</h4>
+      <h4>Dependencies</h4>
+      <span>It is well known that, when dealing with any JavaScript project, the <samp>node_modules</samp> folder
+        becomes a black hole, where starting any project using any framework previously mentioned generates around 200MB
+        worth of files, with lots of dependencies just for generating, again, some static HTML files for a blog post.
+        Too much.</span>
 
-    <!---------------------------------------------------------------------------------------------------------------->
-    <h3 id="que-no-quiero">¿Qué <u>no</u> quiero en el blog?</h3>
-    <ol>
-      <li>Cookies</li>
-      <li>JavaScript</li>
-      <li>Dependencias</li>
-      <li>Analíticas</li>
+      <p>Another awful dependency relies on software installed on your machine. Any project like that will need to have
+        <samp>node</samp> installed, and you will need to follow several builds and deploy steps, which, if you need to
+        rely on the <samp>node_gyp</samp> package on Windows, oh boy, you are going to have a tough time. So basically,
+        for writing a blog post, we are relying on lots of software. It should be enough with a text editor and a decent
+        internet connection, which will last forever, and it will not depend on dozens of dependencies that might not
+        exist after some time.</p>
 
-    </ol>
-    <!---------------------------------------------------------------------------------------------------------------->
-    <h3 id="dificultad">¿Por qué es tan difícil crear un blog?</h3>
 
-    <!---------------------------------------------------------------------------------------------------------------->
-    <h3 id="como">Cómo se ha creado el blog</h3>
+      <h4>Analytics</h4>
+      <span>
+        As stated previously, I prefer not to have any kind of analytics or metrics related to the blog, so the blog
+        doesn't have any kind of component that gathers that kind of information. Therefore, the avoidance of cookies
+        and their banners is easily achieved.
+      </span>
 
+      <!---------------------------------------------------------------------------------------------------------------->
+      <h3 id="how">How has the blog been created?</h3>
+      <span>Once all the requisites have been defined, the next step is to choose the tech stack and build it. Let's
+        remember what does this blog need to fulfil:
+        <ul>
+          <li>No cookies.</li>
+          <li>No JavaScript.</li>
+          <li>Make the blog accessible, both for functional diverse people and slow internet connections.</li>
+          <li>As few dependencies as possible.</li>
+          <li>Avoid all kind of metrics and analytics.</li>
+        </ul>
+      </span>
+
+      <p>To fulfil all these rules, the tech stack has been chosen like this:
+      <ol>
+        <li>No JavaScript framework at all, not even the ones that generate static pages, so no JavaScript is used here.
+        </li>
+        <li>Google Analytics not included. Cookies, metrics an analytics fall behind.</li>
+        <li>Everything written in here will be done in plain HTML. The tech stack limits itself to HTML and CSS.</li>
+        <li>For the looks I am using <a rel="noreferrer" href="https://github.com/causal-agent/writ"
+            target="_blank">Writ</a>, a <em>drop-in</em> CSS library, so, no custom CSS-classes, it just uses HTML tags
+          to style the content. As it doesn't use classes, we can change the CSS whenever we want by just changing the
+          CSS file. <a rel="noreferrer" href="https://dohliam.github.io/dropin-minimal-css/" target="_blank">A list of
+            drop-in CSS files can be found in GitHub</a>.</li>
+        <li>Both entries in English and Spanish will be separately written, in plain HTML, setting English as the
+          default language.</li>
+        <li>Before publishing anything, Lighthouse and aXe will be run against the web to check that it fulfils all the
+          accessibility standards.</li>
+      </ol>
+      </p>
+
+      <p>
+        Those technical decisions don't come for free, as it introduces some degree of complexity when dealing with
+        updates, template changes or things like that, as every post lives by itself, they don't depend on anything.
+      </p>
 </body>
 
 </html>
